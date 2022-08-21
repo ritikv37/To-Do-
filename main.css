@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+body{
+    background-image: linear-gradient(rgb(182, 182, 237),rgb(153, 208, 220));   
+    width: 100%;
+    min-height: 100vh;
+}
+.title{
+    width: 70%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px auto ;
+}
+.input-con{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    height: 40px;
+}
+.input-data{
+    width: 90%;
+    height: 40px;
+    border-radius: 6px;
+    
+}
+.input-data::placeholder{
+    text-align: center;
+    font-size: 20px;
+}
+.input-data:focus{
+    border: 5px solid #b3eaf7;
+}
+.btn{
+    width: 10%;
+    height: 40px;
+    border-radius: 6px;
+    background-image: linear-gradient(rgb(201, 201, 255),rgb(251, 183, 255));
+    padding:18px;
+}
+.btn:hover{
+    background-image: linear-gradient(rgb(82, 229, 255),rgb(165, 255, 48));
+}
+.list{
+    width: 40%;
+    margin: 30px auto;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 30px;
+    overflow: hidden;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(241, 255, 113);
+    margin: 5px 0;
+    padding: 2px 10px;
+    border-radius: 10px;
+   align-items: center;
+   background-image: linear-gradient(rgb(174, 209, 217),rgb(203, 203, 242));
+   
+}
+i{
+    font-size: 20px;
+    margin-top: 5px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+@media all and (max-width: 640px) {
+    .input-con{
+        width: 80%;
+    }
+    .btn{
+        padding: 0px;
+        
+    }
+   
+}
